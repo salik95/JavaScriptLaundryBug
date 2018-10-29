@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+<meta charset="UTF-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<title>Vaskeri regnskab</title>
+</head>
+
+<body>
+
+<h1>Register dit vaskeforbrug</h1>
+<h3>Angiv dit navn</h3>
+
+<select id="beboList">
+<option value="bjarneLarsen">Bjarne Larsen</option>
+<option value="susanJensen">Susan Jensen</option>
+<option value="oleHansen">Ole Hansen</option>
+</select>
+</br>
+
+
+<h3>Angiv dato, måned, antalt vaske og antal tørretumbler</h3>
+Angiv dato: <input type="number" id="inputDato" />
+Angiv måned: <select id="inputMaaned">
+    <option value="januar">Januar</option>
+    <option value="februar">Februar</option>
+    <option value="marts">Marts</option>
+    <option value="april">April</option>
+    <option value="maj">Maj</option>
+    <option value="juni">Juni</option>
+    <option value="juli">Juli</option>
+    <option value="august">August</option>
+    <option value="september">September</option>
+    <option value="oktober">Oktober</option>
+    <option value="november">November</option>
+    <option value="december">December</option>
+    </select>
+
+    Antal vaske på dato: <input type="number" id="inputVask" />
+    Antal tørretumbler på dato: <input type="number" id="inputTumbler" />
+    </br>
+<p>
+<button onclick="opretFunk()">TILFØJ VASKEDATA</button>
+</p>
+* * * * * * * * * * * * * * * * * * * *
+<p>
+<button onclick="visFunk()">VIS SAMLET VASKEDATA</button>
+</p>
+<p><b id="outputPerson"></b></p>
+<p><b id="outputData"></b></p>
+
+<script src="jsindex.js"></script>
+
+</body>
+</html>
